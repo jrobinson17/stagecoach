@@ -17,6 +17,8 @@
 
 # npm is now part of the nodejs package, removed failing step to separately install it.
 
+echo "Installing git" &&
+apt-get -y install git &&
 echo "Installing requirements for building node extensions" &&
 apt-get -y install build-essential &&
 echo "Installing Node" &&
